@@ -432,7 +432,7 @@ section.container a.link-guidelines {
 #styles ul li a::before {
   content: "";
   display: inline-block;
-  background: url("/images/clouds.svg") no-repeat;
+  background: url("images/clouds.svg") no-repeat;
   width: 32px;
   height: 16px;
   filter: invert(54%) sepia(94%) saturate(748%) hue-rotate(137deg) brightness(97%) contrast(101%);
@@ -440,7 +440,7 @@ section.container a.link-guidelines {
 #styles ul li a::after {
   content: "";
   display: inline-block;
-  background: url("/images/clouds.svg") no-repeat;
+  background: url("images/clouds.svg") no-repeat;
   width: 32px;
   height: 16px;
   filter: invert(54%) sepia(94%) saturate(748%) hue-rotate(137deg) brightness(97%) contrast(101%);
@@ -492,7 +492,7 @@ section.container a.link-guidelines {
   #styles ul li a::before {
     content: "";
     display: inline-block;
-    background: url("/images/clouds.svg") no-repeat;
+    background: url("images/clouds.svg") no-repeat;
     width: 32px;
     height: 16px;
     filter: invert(54%) sepia(94%) saturate(748%) hue-rotate(137deg) brightness(97%) contrast(101%);
@@ -500,7 +500,7 @@ section.container a.link-guidelines {
   #styles ul li a::after {
     content: "";
     display: inline-block;
-    background: url("/images/clouds.svg") no-repeat;
+    background: url("images/clouds.svg") no-repeat;
     width: 32px;
     height: 16px;
     filter: invert(54%) sepia(94%) saturate(748%) hue-rotate(137deg) brightness(97%) contrast(101%);
@@ -688,15 +688,15 @@ aside.profile {
     flex-direction: row;
   }
   .page-footer .container ul li::before {
-    content: url("/images/clouds.svg");
+    content: url("images/clouds.svg");
   }
   .page-footer .container ul li:nth-child(odd)::before {
-    content: url("/images/clouds.svg");
+    content: url("images/clouds.svg");
     display: inline-block;
     width: 150px;
   }
   .page-footer .container ul li:nth-child(even)::before {
-    content: url("/images/clouds.svg");
+    content: url("images/clouds.svg");
     display: inline-block;
     width: 225px;
   }

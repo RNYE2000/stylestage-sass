@@ -27,15 +27,15 @@
                 flex-direction: row;
                 li{
                     &::before{
-                        content: url('/images/clouds.svg');
+                        content: url('images/clouds.svg');
                     }
                     &:nth-child(odd)::before{
-                        content: url('/images/clouds.svg');
+                        content: url('images/clouds.svg');
                         display: inline-block;
                         width: 150px;
                     }
                     &:nth-child(even)::before{
-                        content: url('/images/clouds.svg');
+                        content: url('images/clouds.svg');
                         display: inline-block;
                         width: 225px;
                     }

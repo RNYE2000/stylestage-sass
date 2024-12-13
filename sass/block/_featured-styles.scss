@@ -29,7 +29,7 @@
                 &::before {
                     content: '';
                     display: inline-block;
-                    background: url('/images/clouds.svg') no-repeat;
+                    background: url('images/clouds.svg') no-repeat;
                     width: 32px;
                     height: 16px;
                     filter: invert(54%) sepia(94%) saturate(748%) hue-rotate(137deg) brightness(97%) contrast(101%);
@@ -37,7 +37,7 @@
                 &::after {
                     content: '';
                     display: inline-block; 
-                    background: url('/images/clouds.svg') no-repeat;
+                    background: url('images/clouds.svg') no-repeat;
                     width: 32px;
                     height: 16px;
                     filter: invert(54%) sepia(94%) saturate(748%) hue-rotate(137deg) brightness(97%) contrast(101%);
@@ -85,7 +85,7 @@
                     &::before {
                         content: '';
                         display: inline-block;
-                        background: url('/images/clouds.svg') no-repeat;
+                        background: url('images/clouds.svg') no-repeat;
                         width: 32px; // Adjust to your SVG's width
                         height: 16px; // Adjust to your SVG's height
                         filter: invert(54%) sepia(94%) saturate(748%) hue-rotate(137deg) brightness(97%) contrast(101%);
@@ -93,7 +93,7 @@
                     &::after {
                         content: '';
                         display: inline-block; 
-                        background: url('/images/clouds.svg') no-repeat;
+                        background: url('images/clouds.svg') no-repeat;
                         width: 32px; // Adjust to your SVG's width
                         height: 16px; // Adjust to your SVG's height
                         filter: invert(54%) sepia(94%) saturate(748%) hue-rotate(137deg) brightness(97%) contrast(101%);
