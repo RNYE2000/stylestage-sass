@@ -178,11 +178,10 @@ blockquote::before {
   height: 100%;
   border: 5px solid var(--color-secondary);
   border-style: inset;
-  transform: scale(1.1);
+  transform: scale(1);
   content: "";
 }
-
-  blockquote::after {
+blockquote::after {
   grid-area: blockquote;
   color: #6f6ffd;
   background-repeat: no-repeat;
@@ -391,7 +390,7 @@ section.container a.link-guidelines {
   }
   #contribute .container:nth-of-type(2) ol li::before {
     content: url("images/clouds.svg");
-    left: 45%;
+    left: 47%;
     top: 0.2em;
     width: 3em;
     height: 1.5em;
