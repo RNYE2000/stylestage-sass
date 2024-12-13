@@ -1,0 +1,59 @@
+#contribute{
+    text-align: center;
+    &:first-child{
+
+        width: 100%;
+        margin: auto;
+    }
+    p{
+        width: 80%;
+        margin: auto;
+    }
+
+    .container:nth-of-type(2){
+        width: 80%;
+        margin: auto;
+        padding-top: 40px;
+        ol {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            li {
+              position: relative;
+       
+              &::before {
+                content: url('images/clouds.svg');
+              }
+            }
+          }
+    }
+}
+
+@include respond-to("lg"){
+  #contribute{
+    .container:nth-of-type(2){
+        ol {
+            padding-left: 1.5em;
+      
+            li {
+              padding-left: 1.5em;
+              position: relative;
+              width: 100%;
+              padding-top: 2.5em;
+      
+              &::before {
+                content: url('images/clouds.svg');
+                left: 45%;
+                top: 0.2em;
+                width: 3em;
+                height: 1.5em;
+                position: absolute;
+              }
+            }
+          }
+    }
+}
+
+
+
+}

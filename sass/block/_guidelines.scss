@@ -1,0 +1,33 @@
+article#guidelines {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    #h3{
+        font-family: quicksand;
+    }
+    p{
+        width: 80%;
+        margin: auto;
+    }
+}
+
+section.container h2 {
+    margin-top: 60px;
+}
+
+
+section.container h3 {
+    font-size: 30px;
+    font-weight: 700; 
+}
+section.container h3 {
+    border-style: inset;
+    border-width: 5px;
+    border-color: #c2dfe3;
+    padding: 0.5em; 
+    display: inline-block;
+}
+section.container a.link-guidelines {
+    color: black;
+  }

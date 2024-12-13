@@ -1,0 +1,65 @@
+header{
+  background: url('images/tip.jpg');
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .container{
+      position: absolute;
+      background-color: rgba(255, 255, 255, .3);
+       width: 100%;
+       height: 100%;
+       text-align: center;
+       h1{
+        color: white;
+        position: relative;
+        padding-top: 2%;
+        font-size: 3.5rem;
+        padding-left: 2%;
+        padding-bottom: 2%;
+        font-style: italic;
+        font-family: quicksand;
+        text-align: center;
+      }
+      h2{
+        font-family: IM fell great primer SC;
+        position: sticky;
+        font-size: 1.5rem;
+      }  
+      p{
+        position:absolute;
+        bottom: 0;
+        font-size: .85rem;
+        right: 0;
+        padding-right: 30px;
+        a{
+          color: $color-onyx;
+          text-decoration: none;
+        }
+      }
+      .link-github svg {
+        fill: #FFD700;
+      }
+      }
+
+}
+
+@include respond-to("lg"){
+  header{
+    .container{
+       h1{
+        font-size: 8vw;
+        margin-bottom: 80px;
+        text-align: left;
+      }
+      h2{
+        font-size: 2vw;
+      }  
+      
+    }
+}
+}

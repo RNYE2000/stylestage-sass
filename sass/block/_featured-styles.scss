@@ -1,0 +1,112 @@
+#styles{
+    text-align: center;
+    padding-top: 40px;
+    @include respond-to('md'){
+        #styles{
+            padding-top: 20px;
+        }
+    }
+    ul{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px;
+        width: 80%;
+        margin: auto;
+        list-style: none;
+        padding: 0;
+        li{
+            background-color: $color-light;
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+            border-radius: 10px;
+            color: $color-dark;
+            text-align: center;
+            a{
+                color: $color-onyx;
+                text-decoration: none;
+                font-size: 1.5rem;
+                &::before {
+                    content: '';
+                    display: inline-block;
+                    background: url('/images/clouds.svg') no-repeat;
+                    width: 32px;
+                    height: 16px;
+                    filter: invert(54%) sepia(94%) saturate(748%) hue-rotate(137deg) brightness(97%) contrast(101%);
+                }
+                &::after {
+                    content: '';
+                    display: inline-block; 
+                    background: url('/images/clouds.svg') no-repeat;
+                    width: 32px;
+                    height: 16px;
+                    filter: invert(54%) sepia(94%) saturate(748%) hue-rotate(137deg) brightness(97%) contrast(101%);
+                }
+                &:hover::before {
+                    transform: scale(1.5);
+                  }
+                &:hover::after {
+                    transform: scale(1.5);
+                  }
+            }
+        }
+    }
+
+    .link-allstyles{
+        margin: 40px 0;
+    }
+}
+@include respond-to("lg"){
+    #styles{
+        text-align: center;
+        padding-top: 40px;
+        @include respond-to('md'){
+            padding-top: 20px;
+        }
+        ul{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+            width: 80%;
+            margin: auto;
+            list-style: none;
+            li{
+                background-color: $color-light;
+                padding: 50px;
+                display: flex;
+                justify-content: center;
+                border-radius: 10px;
+                color: $color-dark;
+                text-align: center;
+                a{
+                    color: $color-onyx;
+                    text-decoration: none;
+                    font-size: 1.5rem;
+                    &::before {
+                        content: '';
+                        display: inline-block;
+                        background: url('/images/clouds.svg') no-repeat;
+                        width: 32px; // Adjust to your SVG's width
+                        height: 16px; // Adjust to your SVG's height
+                        filter: invert(54%) sepia(94%) saturate(748%) hue-rotate(137deg) brightness(97%) contrast(101%);
+                    }
+                    &::after {
+                        content: '';
+                        display: inline-block; 
+                        background: url('/images/clouds.svg') no-repeat;
+                        width: 32px; // Adjust to your SVG's width
+                        height: 16px; // Adjust to your SVG's height
+                        filter: invert(54%) sepia(94%) saturate(748%) hue-rotate(137deg) brightness(97%) contrast(101%);
+                    }
+                    &:hover::before {
+                        transform: scale(1.5);
+                      }
+                    &:hover::after {
+                        transform: scale(1.5);
+                      }
+                }
+            }
+        }
+
+}
+}

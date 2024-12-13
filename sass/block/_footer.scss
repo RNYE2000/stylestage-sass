@@ -1,0 +1,46 @@
+.page-footer{
+    background-color: $color-onyx;
+    position: relative;
+    text-align: center;
+    padding: 15px 0;
+    .container{
+        ul{
+            display: flex;
+            list-style: none;
+            width: 80%;
+            margin: auto;
+            padding: 40px 0;
+            justify-content: space-between;
+            flex-direction: column;
+
+            .link-github svg{
+                fill: #FFD700;
+            }
+        }
+    }
+}
+
+@include respond-to("lg"){
+    .page-footer{
+        .container{
+            ul{
+                flex-direction: row;
+                li{
+                    &::before{
+                        content: url('/images/clouds.svg');
+                    }
+                    &:nth-child(odd)::before{
+                        content: url('/images/clouds.svg');
+                        display: inline-block;
+                        width: 150px;
+                    }
+                    &:nth-child(even)::before{
+                        content: url('/images/clouds.svg');
+                        display: inline-block;
+                        width: 225px;
+                    }
+                }
+            }
+        }
+    }
+}

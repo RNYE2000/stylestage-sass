@@ -1,0 +1,49 @@
+.profile{
+  background-color: white;
+  color: $color-onyx;
+  margin-top: 25px;
+}
+h4#profile-title {
+    font-family: Quicksand;
+    padding: 10px; 
+    font-size: 32px;
+  }
+  aside.profile {
+    text-align: center;
+  }
+.profile ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+  .profile a{
+    color: var(--color-primary) !important;
+    }
+
+@include respond-to("lg"){
+  h4#profile-title {
+    font-family: Quicksand;
+    padding: 10px; 
+  }
+  aside.profile {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color:rgba(#32373b,.5);
+    padding-bottom: 20px;
+    padding-right: 15px;
+    z-index: 10;
+    text-align: right;
+  }
+
+  .profile{
+    background-color: initial;
+    color: white;
+    margin-top: 0;
+  }
+
+  .profile a{
+    color: var(--color-primary) !important;
+    }
+
+}

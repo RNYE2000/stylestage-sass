@@ -1,0 +1,38 @@
+$breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px
+  );
+
+/// Responsive breakpoint manager
+/// @access public
+/// @param {String} $breakpoint - Breakpoint
+/// @requires $breakpoints
+@mixin respond-to($breakpoint, $type: 'min') {
+  // Retrieve the breakpoint value from the map
+  $value: map-get($breakpoints, $breakpoint);
+
+  // Check if the value exists
+  @if $value {
+    // Format the media query based on the type ('min' or 'max')
+    $query: if(
+      $type == 'min',
+      'screen and (min-width: #{$value})',
+      'screen and (max-width: #{$value})'
+    );
+
+    // Debug information for development
+    // @debug 'Query: #{$query}';
+
+    // Apply the styles within the media query
+    @media #{$query} {
+      @content;
+    }
+  } @else {
+    // Error message if breakpoint is not found in the map
+    @error 'No value found for `#{$breakpoint}`. '
+           + 'Please make sure it is defined in the `$breakpoints` map.';
+  }
+}
